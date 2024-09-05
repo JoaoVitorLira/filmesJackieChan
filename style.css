@@ -1,0 +1,96 @@
+/* RESET CSS */
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* FIM RESET CSS */
+header {
+    background-color: #5590B0;
+    padding: 5px;
+}
+
+header .agrupamento {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .agrupamento .logo {
+    width: 80px;
+}
+
+header .agrupamento .textos {
+    display: flex;
+    gap: 60px;
+    color: white;
+    align-items: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+header .agrupamento .textos p {
+    position: relative;
+    overflow: hidden;
+}
+
+header .agrupamento .textos p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+header .agrupamento .textos p:hover::after {
+    transform: translateX(0);
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloFilmes{
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    color: #B21B16;
+}
+
+.capasFilmes{
+    width: 220px;
+    height: 330px;
+    margin: 80px;
+}
+ 
+
+.filmes{
+    margin-top: 50px;
+    display: flex;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #DEDEDE;
+    width: 950px;
+    height: 450px;
+}
